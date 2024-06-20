@@ -92,12 +92,16 @@
                         <div class="d-flex justify-content-between text-head">
                             <h4>Total</h4><h4 class="text-secondary">Rp500.000,00</h4>
                         </div>
-                        <select name="address" id="address" class="form-select my-3 border-0">
+                        <select name="address" id="address" class="form-select my-2 border-0">
                             <option value="" hidden disabled selected> Pilih alamat pengiriman</option>
                             <option value="">SMKN 11 Bandung, Kec. Cijerah, Bandung Kulon, Kota Bandung</option>
                             <option value="">SMPN 1 Bandung, Kec. Cicendo, Bandung Kulon, Kota Bandung</option>
+                            <option value="">Isi manual</option>
                         </select>
-                        <select name="metode" id="metode" class="form-select my-3 border-0">
+                        <input type="text" name="address" placeholder="Alamat" class="form-control">
+                        <input type="text" name="city" placeholder="Kabupaten/Kota" class="form-control mt-2">
+                        <input type="text" name="province" placeholder="Provinsi" class="form-control mt-2">
+                        <select name="metode" id="metode" class="form-select my-2 border-0">
                             <option value="" hidden disabled selected> Pilih metode pembayaran</option>
                             <option value="">Transfer bank</option>
                             <option value="">OVO</option>
