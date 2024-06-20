@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelola Produk</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="icon" href="../style/asset/image/logo.png">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-secondary-subtle">
+    <!-- Navbar -->
+    <%- include("../partials/seller-navbar") %>
+    <div class="container-fluid" style="margin-top:70px;">
+        <div class="row">
+            <!-- Sidemenu -->
+            <%- include("../partials/seller-sidemenu") %>
+
+            <!-- Main -->
+            <div class="col">
+                <div class="accordion accordion-custom" id="product">
+                    <a class="accordion-btn" role="button" data-bs-toggle="collapse" href="#active" aria-expanded="true" aria-controls="active">
+                        Produk aktif
+                    </a>
+                    <a class="accordion-btn collapsed" role="button" data-bs-toggle="collapse" href="#soldout" aria-expanded="false" aria-controls="soldout">
+                        Produk habis
+                    </a>
+                    <a class="accordion-btn collapsed" role="button" data-bs-toggle="collapse" href="#draft" aria-expanded="false" aria-controls="draft">
+                        Produk diarsipkan
+                    </a>
+                    <div class="accordion-item">
+                        <div id="active" class="accordion-collapse collapse show" data-bs-parent="#product">
+                            <div class="accordion-body">
+                                <button class="btn btn-success"><i class="fa-solid fa-plus"></i> Tambah</button>
+                                <button class="btn btn-warning"><i class="fa-solid fa-wrench"></i> Edit</button>
+                                <div class="mt-2">
+                                    <table class="table table-bordered">
+                                        <tr>
+                                            <th>Kode Produk</th>
+                                            <th>Nama</th>
+                                            <th>Kategori</th>
+                                            <th>Rincian</th>
+                                            <th>Berat (gram)</th>
+                                            <th>Harga</th>
+                                            <th>Stok</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                        <tr>
+                                            <td>3452524542</td>
+                                            <td>Tipis-tipis abangku</td>
+                                            <td>kategori</td>
+                                            <td>
+                                                <a href="" class="text-dark m-0">Data rincian</a>
+                                            </td>
+                                            <td>2000</td>
+                                            <td>Rp405.000,00</td>
+                                            <td>50</td>
+                                            <td>
+                                                <a href="" class="btn btn-warning">Arsipkan</a>
+                                                <a href="" class="btn btn-danger">Hapus</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="soldout" class="accordion-collapse collapse" data-bs-parent="#product">
+                            <div class="accordion-body">
+                                <div>
+                                    <table class="table table-bordered">
+                                        <tr>
+                                            <th>Kode Produk</th>
+                                            <th>Nama</th>
+                                            <th>Kategori</th>
+                                            <th>Rincian</th>
+                                            <th>Berat (gram)</th>
+                                            <th>Harga</th>
+                                            <th>Stok</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                        <tr>
+                                            <td>3452524542</td>
+                                            <td>Tipis-tipis abangku</td>
+                                            <td>kategori</td>
+                                            <td>
+                                                <a href="" class="text-dark m-0">Data rincian</a>
+                                            </td>
+                                            <td>2000</td>
+                                            <td>Rp405.000,00</td>
+                                            <td class="text-danger">0</td>
+                                            <td>
+                                                <a href="" class="btn btn-success">Terbitkan</a>
+                                                <a href="" class="btn btn-danger">Hapus</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="draft" class="accordion-collapse collapse" data-bs-parent="#product">
+                            <div class="accordion-body">
+                                <div>
+                                    <table class="table table-bordered">
+                                        <tr>
+                                            <th>Kode Produk</th>
+                                            <th>Nama</th>
+                                            <th>Kategori</th>
+                                            <th>Rincian</th>
+                                            <th>Berat (gram)</th>
+                                            <th>Harga</th>
+                                            <th>Stok</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                        <tr>
+                                            <td>3452524542</td>
+                                            <td>Tipis-tipis abangku</td>
+                                            <td>kategori</td>
+                                            <td>
+                                                <a href="" class="text-dark m-0">Data rincian</a>
+                                            </td>
+                                            <td>2000</td>
+                                            <td>Rp405.000,00</td>
+                                            <td>50</td>
+                                            <td>
+                                                <a href="" class="btn btn-success">Terbitkan</a>
+                                                <a href="" class="btn btn-danger">Hapus</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include("../partials/_js.ejs") %>
+</body>
+</html>

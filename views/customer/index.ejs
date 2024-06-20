@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="icon" href="../style/asset/image/logo.png">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Navbar -->
+    <%- include("../partials/navbar", {dir: "<a href='/customer/dashboard' class='nav-link text-dark'>/ Dashboard</a>",}) %>
+    <!-- Floating Cart Button -->
+    <%- include("../partials/cart-button") %>
+    <!-- Sidemenu -->
+    
+
+    <!-- Main -->
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-3 d-none d-md-flex flex-column justify-content-evenly p-3 shadow">
+                <div class="row pb-1">
+                    <div class="col-2 d-flex justify-content-center align-items-center"><i class="fa-solid fa-bars"></i></div>
+                    <div class="col-10 h6 m-0"><b>Telusuri Kategori</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-2 d-flex justify-content-center align-items-center"><i class="fa-solid fa-seedling"></i></div>
+                    <div class="col-10"><a href="" class="text-decoration-none text-dark">Botani</a></div>
+                </div>
+                <div class="row">
+                    <div class="col-2 d-flex justify-content-center align-items-center"><i class="fa-solid fa-plug"></i></div>
+                    <div class="col-10"><a href="" class="text-decoration-none text-dark">Elektronik</a></div>
+                </div>
+                <div class="row">
+                    <div class="col-2 d-flex justify-content-center align-items-center"><i class="fa-solid fa-shirt"></i></div>
+                    <div class="col-10"><a href="" class="text-decoration-none text-dark">Fashion</a></div>
+                </div>
+                <div class="row">
+                    <div class="col-2 d-flex justify-content-center align-items-center"><i class="fa-solid fa-headphones"></i></div>
+                    <div class="col-10"><a href="" class="text-decoration-none text-dark">Perhiasan & Aksesoris</a></div>
+                </div>
+                <div class="row">
+                    <div class="col-2 d-flex justify-content-center align-items-center"><i class="fa-solid fa-basketball"></i></div>
+                    <div class="col-10"><a href="" class="text-decoration-none text-dark">Olahraga</a></div>
+                </div>
+                <div class="row">
+                    <div class="col-2 d-flex justify-content-center align-items-center"><i class="fa-solid fa-person-breastfeeding"></i></div>
+                    <div class="col-10"><a href="" class="text-decoration-none text-dark">Ibu & Anak</a></div>
+                </div>
+                <div class="row">
+                    <div class="col-2 d-flex justify-content-center align-items-center"><i class="fa-solid fa-eye"></i></div>
+                    <div class="col-10"><a href="" class="text-decoration-none text-dark">Kecantikan</a></div>
+                </div>
+                <div class="row">
+                    <div class="col-2 d-flex justify-content-center align-items-center"><i class="fa-solid fa-gamepad"></i></div>
+                    <div class="col-10"><a href="" class="text-decoration-none text-dark">Mainan</a></div>
+                </div>
+                <div class="row">
+                    <div class="col-2 d-flex justify-content-center align-items-center"><i class="fa-solid fa-car"></i></div>
+                    <div class="col-10"><a href="" class="text-decoration-none text-dark">Otomotif</a></div>
+                </div>
+                <div class="row">
+                    <div class="col-2 d-flex justify-content-center align-items-center"><i class="fa-solid fa-palette"></i></div>
+                    <div class="col-10"><a href="" class="text-decoration-none text-dark">Kesenian</a></div>
+                </div>
+                <div class="row">
+                    <div class="col-2 d-flex justify-content-center align-items-center"><i class="fa-solid fa-wrench"></i></div>
+                    <div class="col-10"><a href="" class="text-decoration-none text-dark">Perkakas</a></div>
+                </div>
+            </div>
+            <div class="col-12 col-md-9">
+                <img src="../style/asset/image/jumbotron.png" class="object-fit-cover w-100" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Today's Best Deals -->
+    <div class="container my-4">
+        <div class="d-flex justify-content-between align-items-center">
+            <h3 class="text-head">Penawaran Terbaik Hari Ini</h3>
+            <a href="" class="text-dark">Lihat Produk Lainnya</a>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-3 my-2">
+                <div class="bg-primary card border-0 p-4">
+                    <div style="max-height:150px;">
+                        <h4 class="card-title w-75"><b>Peralatan Dapur</b></h4>
+                        <p class="card-subtitle w-75">Diskom sampai 40% untuk peralatan dapur.</p>
+                        <a href="">Belanja sekarang</a>
+                    </div>
+                    <img src="../style/asset/image/blender.transparent.png" class="object-fit-cover mt-3" style="height:200px;" alt="">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 my-2">
+                <div class="bg-secondary card border-0 p-4">
+                    <div style="max-height:150px;">
+                        <h4 class="card-title w-75"><b>Peralatan Dapur</b></h4>
+                        <p class="card-subtitle w-75">Diskom sampai 40% untuk peralatan dapur.</p>
+                        <a href="">Belanja sekarang</a>
+                    </div>
+                    <img src="../style/asset/image/blender.transparent.png" class="object-fit-cover mt-3" style="height:200px;" alt="">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 my-2">
+                <div class="bg-primary card border-0 p-4">
+                    <div style="max-height:150px;">
+                        <h4 class="card-title w-75"><b>Peralatan Dapur</b></h4>
+                        <p class="card-subtitle w-75">Diskom sampai 40% untuk peralatan dapur.</p>
+                        <a href="">Belanja sekarang</a>
+                    </div>
+                    <img src="../style/asset/image/blender.transparent.png" class="object-fit-cover mt-3" style="height:200px;" alt="">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 my-2">
+                <div class="bg-secondary card border-0 p-4">
+                    <div style="max-height:150px;">
+                        <h4 class="card-title w-75"><b>Peralatan Dapur</b></h4>
+                        <p class="card-subtitle w-75">Diskom sampai 40% untuk peralatan dapur.</p>
+                        <a href="">Belanja sekarang</a>
+                    </div>
+                    <img src="../style/asset/image/blender.transparent.png" class="object-fit-cover mt-3" style="height:200px;" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Limited Deals -->
+    <div class="container my-4">
+        <div class="d-flex justify-content-between align-items-center">
+            <h3 class="text-head">Penawaran Terbatas</h3>
+            <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center me-3">
+                    <span class="me-1">Ends in</span>
+                    <div class="bg-dark rounded-circle position-relative" style="aspect-ratio:1/1;height:35px;">
+                        <span class="text-white position-absolute translate-middle top-50 start-50">11</span>
+                    </div><span class="mx-1">:</span>
+                    <div class="bg-dark rounded-circle position-relative" style="aspect-ratio:1/1;height:35px;">
+                        <span class="text-white position-absolute translate-middle top-50 start-50">16</span>
+                    </div><span class="mx-1">:</span>
+                    <div class="bg-dark rounded-circle position-relative" style="aspect-ratio:1/1;height:35px;">
+                        <span class="text-white position-absolute translate-middle top-50 start-50">34</span>
+                    </div>
+                </div>
+                <a href="" class="text-dark">Lihat Produk Lainnya</a>
+            </div>
+        </div>
+        <div class="row item-card">
+            <div class="col-4 col-md-2 my-2">
+                <div class="card border-0 shadow-sm" title="Tipis-tipis abangku, menyala, tetap ilmu padi king">
+                    <img src="../style/asset/image/test.png" class="object-fit-cover img-fluid" style="aspect-ratio:1/1;" alt="">
+                    <div class="card-body p-2">
+                        <h6 class="card-title mb-1 text-dark text-truncate"><b>Tipis-tipis abangku, menyala, tetap ilmu padi king</b></h6>
+                        <p class="card-subtitle text-smaller"><span class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span> (10)</p>
+                        <p class="p-0 m-0 my-1">Rp1.000.000,00</p>
+                        <a href="" class="text-decoration-none text-dark">
+                            <img src="../style/asset/image/test.jfif" class="rounded-circle" style="aspect-ratio:1/1;height:15px;" alt="">
+                            Toko
+                        </a>
+                        <p class="m-0 pt-1 mt-1 text-smaller border-top">Terjual 10+</p>
+                    </div>
+                    <a href="/customer/product" class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="col-4 col-md-2 my-2">
+                <div class="card border-0 shadow-sm" title="Tipis-tipis abangku, menyala, tetap ilmu padi king">
+                    <img src="../style/asset/image/test.png" class="object-fit-cover img-fluid" style="aspect-ratio:1/1;" alt="">
+                    <div class="card-body p-2">
+                        <h6 class="card-title mb-1 text-dark text-truncate"><b>Tipis-tipis abangku, menyala, tetap ilmu padi king</b></h6>
+                        <p class="card-subtitle text-smaller"><span class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span> (10)</p>
+                        <p class="p-0 m-0 my-1">Rp1.000.000,00</p>
+                        <a href="" class="text-decoration-none text-dark">
+                            <img src="../style/asset/image/test.jfif" class="rounded-circle" style="aspect-ratio:1/1;height:15px;" alt="">
+                            Toko
+                        </a>
+                        <p class="m-0 pt-1 mt-1 text-smaller border-top">Terjual 10+</p>
+                    </div>
+                    <a href="/customer/product" class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="col-4 col-md-2 my-2">
+                <div class="card border-0 shadow-sm" title="Tipis-tipis abangku, menyala, tetap ilmu padi king">
+                    <img src="../style/asset/image/test.png" class="object-fit-cover img-fluid" style="aspect-ratio:1/1;" alt="">
+                    <div class="card-body p-2">
+                        <h6 class="card-title mb-1 text-dark text-truncate"><b>Tipis-tipis abangku, menyala, tetap ilmu padi king</b></h6>
+                        <p class="card-subtitle text-smaller"><span class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span> (10)</p>
+                        <p class="p-0 m-0 my-1">Rp1.000.000,00</p>
+                        <a href="" class="text-decoration-none text-dark">
+                            <img src="../style/asset/image/test.jfif" class="rounded-circle" style="aspect-ratio:1/1;height:15px;" alt="">
+                            Toko
+                        </a>
+                        <p class="m-0 pt-1 mt-1 text-smaller border-top">Terjual 10+</p>
+                    </div>
+                    <a href="/customer/product" class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="col-4 col-md-2 my-2">
+                <div class="card border-0 shadow-sm" title="Tipis-tipis abangku, menyala, tetap ilmu padi king">
+                    <img src="../style/asset/image/test.png" class="object-fit-cover img-fluid" style="aspect-ratio:1/1;" alt="">
+                    <div class="card-body p-2">
+                        <h6 class="card-title mb-1 text-dark text-truncate"><b>Tipis-tipis abangku, menyala, tetap ilmu padi king</b></h6>
+                        <p class="card-subtitle text-smaller"><span class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span> (10)</p>
+                        <p class="p-0 m-0 my-1">Rp1.000.000,00</p>
+                        <a href="" class="text-decoration-none text-dark">
+                            <img src="../style/asset/image/test.jfif" class="rounded-circle" style="aspect-ratio:1/1;height:15px;" alt="">
+                            Toko
+                        </a>
+                        <p class="m-0 pt-1 mt-1 text-smaller border-top">Terjual 10+</p>
+                    </div>
+                    <a href="/customer/product" class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="col-4 col-md-2 my-2">
+                <div class="card border-0 shadow-sm" title="Tipis-tipis abangku, menyala, tetap ilmu padi king">
+                    <img src="../style/asset/image/test.png" class="object-fit-cover img-fluid" style="aspect-ratio:1/1;" alt="">
+                    <div class="card-body p-2">
+                        <h6 class="card-title mb-1 text-dark text-truncate"><b>Tipis-tipis abangku, menyala, tetap ilmu padi king</b></h6>
+                        <p class="card-subtitle text-smaller"><span class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span> (10)</p>
+                        <p class="p-0 m-0 my-1">Rp1.000.000,00</p>
+                        <a href="" class="text-decoration-none text-dark">
+                            <img src="../style/asset/image/test.jfif" class="rounded-circle" style="aspect-ratio:1/1;height:15px;" alt="">
+                            Toko
+                        </a>
+                        <p class="m-0 pt-1 mt-1 text-smaller border-top">Terjual 10+</p>
+                    </div>
+                    <a href="/customer/product" class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="col-4 col-md-2 my-2">
+                <div class="card border-0 shadow-sm" title="Tipis-tipis abangku, menyala, tetap ilmu padi king">
+                    <img src="../style/asset/image/test.png" class="object-fit-cover img-fluid" style="aspect-ratio:1/1;" alt="">
+                    <div class="card-body p-2">
+                        <h6 class="card-title mb-1 text-dark text-truncate"><b>Tipis-tipis abangku, menyala, tetap ilmu padi king</b></h6>
+                        <p class="card-subtitle text-smaller"><span class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span> (10)</p>
+                        <p class="p-0 m-0 my-1">Rp1.000.000,00</p>
+                        <a href="" class="text-decoration-none text-dark">
+                            <img src="../style/asset/image/test.jfif" class="rounded-circle" style="aspect-ratio:1/1;height:15px;" alt="">
+                            Toko
+                        </a>
+                        <p class="m-0 pt-1 mt-1 text-smaller border-top">Terjual 10+</p>
+                    </div>
+                    <a href="/customer/product" class="stretched-link"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Guarantee -->
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-12 col-md-4 my-1">
+                <div class="card p-3">
+                    <div class="row d-flex">
+                        <div class="col-3">
+                            <i class="fa-solid fa-circle-check display-3 me-3"></i>
+                        </div>
+                        <div class="col-9">
+                            <h5><strong>Money Back Guarantee</strong></h5>
+                            <h6>Uang kembali jika barang tidak sesuai.</h6>
+                            <a href="" class="text-dark">Pelajari lebih lanjut</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 my-1">
+                <div class="card p-3">
+                    <div class="row d-flex">
+                        <div class="col-3">
+                            <i class="fa-solid fa-circle-check display-3 me-3"></i>
+                        </div>
+                        <div class="col-9">
+                            <h5><strong>Money Back Guarantee</strong></h5>
+                            <h6>Uang kembali jika barang tidak sesuai.</h6>
+                            <a href="" class="text-dark">Pelajari lebih lanjut</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 my-1">
+                <div class="card p-3">
+                    <div class="row d-flex">
+                        <div class="col-3">
+                            <i class="fa-solid fa-circle-check display-3 me-3"></i>
+                        </div>
+                        <div class="col-9">
+                            <h5><strong>Money Back Guarantee</strong></h5>
+                            <h6>Uang kembali jika barang tidak sesuai.</h6>
+                            <a href="" class="text-dark">Pelajari lebih lanjut</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popular Shops -->
+    <div class="container my-4">
+        <div class="d-flex justify-content-between align-items-center">
+            <h3 class="text-head">Toko Terpopuler</h3>
+            <a href="" class="text-dark">Lihat Toko Lainnya</a>
+        </div>
+        <div class="row item-card">
+            <div class="col-4 col-md-2 my-2">
+                <div class="card border-0 shadow-sm" title="Tipis-tipis abangku, menyala, tetap ilmu padi king">
+                    <div class="d-flex flex-column align-items-center p-2">
+                        <div class="position-relative mb-3">
+                            <img src="../style/asset/image/test.png" class="object-fit-cover img-fluid rounded" style="aspect-ratio:7/3;" alt="">
+                            <img src="../style/asset/image/test.jfif" class="object-fit-cover img-fluid position-absolute translate-middle top-100 start-50 rounded-circle border border-white border-5" style="aspect-ratio:1/1;height:60px;" alt="">
+                        </div>
+                        <h6 class="card-title m-0 mt-3 text-dark">Nama Toko</h6>
+                        <p class="card-subtitle">Nama Seller</p>
+                    </div>
+                    <a href="/customer/shop" class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="col-4 col-md-2 my-2">
+                <div class="card border-0 shadow-sm" title="Tipis-tipis abangku, menyala, tetap ilmu padi king">
+                    <div class="d-flex flex-column align-items-center p-2">
+                        <div class="position-relative mb-3">
+                            <img src="../style/asset/image/test.png" class="object-fit-cover img-fluid rounded" style="aspect-ratio:7/3;" alt="">
+                            <img src="../style/asset/image/test.jfif" class="object-fit-cover img-fluid position-absolute translate-middle top-100 start-50 rounded-circle border border-white border-5" style="aspect-ratio:1/1;height:60px;" alt="">
+                        </div>
+                        <h6 class="card-title m-0 mt-3 text-dark">Nama Toko</h6>
+                        <p class="card-subtitle">Nama Seller</p>
+                    </div>
+                    <a href="/customer/shop" class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="col-4 col-md-2 my-2">
+                <div class="card border-0 shadow-sm" title="Tipis-tipis abangku, menyala, tetap ilmu padi king">
+                    <div class="d-flex flex-column align-items-center p-2">
+                        <div class="position-relative mb-3">
+                            <img src="../style/asset/image/test.png" class="object-fit-cover img-fluid rounded" style="aspect-ratio:7/3;" alt="">
+                            <img src="../style/asset/image/test.jfif" class="object-fit-cover img-fluid position-absolute translate-middle top-100 start-50 rounded-circle border border-white border-5" style="aspect-ratio:1/1;height:60px;" alt="">
+                        </div>
+                        <h6 class="card-title m-0 mt-3 text-dark">Nama Toko</h6>
+                        <p class="card-subtitle">Nama Seller</p>
+                    </div>
+                    <a href="/customer/shop" class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="col-4 col-md-2 my-2">
+                <div class="card border-0 shadow-sm" title="Tipis-tipis abangku, menyala, tetap ilmu padi king">
+                    <div class="d-flex flex-column align-items-center p-2">
+                        <div class="position-relative mb-3">
+                            <img src="../style/asset/image/test.png" class="object-fit-cover img-fluid rounded" style="aspect-ratio:7/3;" alt="">
+                            <img src="../style/asset/image/test.jfif" class="object-fit-cover img-fluid position-absolute translate-middle top-100 start-50 rounded-circle border border-white border-5" style="aspect-ratio:1/1;height:60px;" alt="">
+                        </div>
+                        <h6 class="card-title m-0 mt-3 text-dark">Nama Toko</h6>
+                        <p class="card-subtitle">Nama Seller</p>
+                    </div>
+                    <a href="/customer/shop" class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="col-4 col-md-2 my-2">
+                <div class="card border-0 shadow-sm" title="Tipis-tipis abangku, menyala, tetap ilmu padi king">
+                    <div class="d-flex flex-column align-items-center p-2">
+                        <div class="position-relative mb-3">
+                            <img src="../style/asset/image/test.png" class="object-fit-cover img-fluid rounded" style="aspect-ratio:7/3;" alt="">
+                            <img src="../style/asset/image/test.jfif" class="object-fit-cover img-fluid position-absolute translate-middle top-100 start-50 rounded-circle border border-white border-5" style="aspect-ratio:1/1;height:60px;" alt="">
+                        </div>
+                        <h6 class="card-title m-0 mt-3 text-dark">Nama Toko</h6>
+                        <p class="card-subtitle">Nama Seller</p>
+                    </div>
+                    <a href="/customer/shop" class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="col-4 col-md-2 my-2">
+                <div class="card border-0 shadow-sm" title="Tipis-tipis abangku, menyala, tetap ilmu padi king">
+                    <div class="d-flex flex-column align-items-center p-2">
+                        <div class="position-relative mb-3">
+                            <img src="../style/asset/image/test.png" class="object-fit-cover img-fluid rounded" style="aspect-ratio:7/3;" alt="">
+                            <img src="../style/asset/image/test.jfif" class="object-fit-cover img-fluid position-absolute translate-middle top-100 start-50 rounded-circle border border-white border-5" style="aspect-ratio:1/1;height:60px;" alt="">
+                        </div>
+                        <h6 class="card-title m-0 mt-3 text-dark">Nama Toko</h6>
+                        <p class="card-subtitle">Nama Seller</p>
+                    </div>
+                    <a href="/customer/shop" class="stretched-link"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <%- include("../partials/footer") %>
+
+    <%- include("../partials/_js.ejs") %>
+</body>
+</html>

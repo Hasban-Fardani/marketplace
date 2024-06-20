@@ -1,0 +1,118 @@
+.accordion-custom {
+    margin-top: 30px;
+}
+.accordion-custom .accordion-btn {
+    padding: 5px;
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #cccccc;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.accordion-custom .collapsed {
+    background-color: #cccccc;
+}
+.accordion-custom .accordion-item .accordion-collapse {
+    border: 1px solid #cccccc;
+}
+
+
+.bg-light {
+    background-color: #fbfbfb !important;
+}
+.bg-primary {
+    background-color: #f7ecfc !important;
+}
+.bg-grad-dark {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0))
+}
+.bg-secondary {
+    background-color: #ad9fec !important;
+}
+
+
+.border-primary {
+    border-color: #f7ecfc !important;
+}
+
+
+.btn-primary {
+    background-color: #f7ecfc !important;
+    color: #ad9fec !important;
+    border: #f7ecfc !important;
+}
+.btn-primary:hover {
+    background-color: #c7bccc !important;
+    color: #f7ecfc !important;
+}
+.btn-secondary {
+    background-color: #ad9fec !important;
+    border: #ad9fec !important;
+}
+.btn-outline-secondary {
+    color: #ad9fec !important;
+    border: 1px solid #ad9fec !important;
+}
+.btn-outline-secondary:hover {
+    background-color: #ad9fec !important;
+    color: #f7ecfc !important;
+}
+.btn-secondary:hover {
+    background-color: #6d6fac !important;
+}
+
+
+.item-card .card:hover {
+    transform: scale(1.1);
+}
+
+
+.ratio1-1 {
+    aspect-ratio: 1/1;
+}
+
+
+.read {
+    background-color: #eeeeee !important;
+    color: #aaaaaa !important;
+}
+
+
+.second-table th {
+    background-color: #f7ecfc !important;
+}
+.second-table td {
+    background-color: #f7ecfc !important;
+}
+.table-separated {
+    border-collapse: separate;
+    border-spacing: 0 20px;
+}
+
+
+.text-primary {
+    color: #f7ecfc !important;
+}
+.text-secondary {
+    color: #ad9fec !important;
+}
+.text-bg-secondary {
+    background-color: #ad9fec !important;
+}
+.text-active {
+    color: #bd9ffc !important;
+}
+.text-inactive {
+    color: #bbbbbb !important;
+}
+.text-monospace {
+    font-family: "Courier";
+}
+.text-head {
+    font-family: "Kanit", sans-serif;
+}
+.text-smaller {
+    font-size: 0.8em;
+}

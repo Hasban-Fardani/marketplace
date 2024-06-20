@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ulasan Pesanan</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="icon" href="../style/asset/image/logo.png">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-secondary-subtle">
+    <!-- Navbar -->
+    <%- include("../partials/seller-navbar") %>
+    <div class="container-fluid" style="margin-top:70px;">
+        <div class="row">
+            <!-- Sidemenu -->
+            <%- include("../partials/seller-sidemenu") %>
+
+            <!-- Main -->
+            <div class="col mt-3">
+                <table class="table table-bordered">
+                    <tr>
+                        <th>Kode Pesanan</th>
+                        <th>Pembeli</th>
+                        <th>Produk</th>
+                        <th>Rating</th>
+                        <th>Rincian</th>
+                    </tr>
+                    <tr>
+                        <td>20240304/dj32r8h</td>
+                        <td>
+                            <div class="d-flex">
+                                <img src="../style/asset/image/icon.jpg" alt="" class="rounded-circle" style="aspect-ratio:1/1;height:25px;">
+                                <div class="ms-2">
+                                    <a href="" class="text-dark m-0">pembeli<i class="fa-regular fa-circle-question"></i></a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex">
+                                <img src="../style/asset/image/test.jpg" alt="" style="aspect-ratio:1/1;height:75px;">
+                                <div class="ms-2">
+                                    <a href="" class="text-dark m-0">Tipis-tipis abangku<i class="fa-regular fa-circle-question"></i></a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="m-0 text-warning">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </td>
+                        <td>
+                            <a href="" class="text-dark m-0">Data</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <%- include("../partials/_js.ejs") %>
+</body>
+</html>

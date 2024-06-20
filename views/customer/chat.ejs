@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Toko RamRam</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="icon" href="../style/asset/image/logo.png">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Navbar -->
+    <%- include("../partials/navbar", {dir: "<a href='/customer/chat' class='nav-link text-dark'>/ Chat</a>",}) %>
+    <!-- Floating Cart Button -->
+    <%- include("../partials/cart-button") %>
+    <!-- Sidemenu -->
+    
+
+    <!-- Main -->
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-3">
+                <a class="btn w-100" href="#">
+                    <div class="row">
+                        <div class="col-2 py-1">
+                            <img src="../style/asset/image/icon.jpg" alt="" class="rounded-circle" style="aspect-ratio:1/1;width:35px;">
+                        </div>
+                        <div class="col-10 d-flex align-items-center py-1">
+                            <h5 class="m-0 p-0">Toko RamRam</h5>
+                        </div>
+                        <div class="col-2 py-1 border-top">
+                            <img src="../style/asset/image/icon.jpg" alt="" class="rounded-circle" style="aspect-ratio:1/1;width:35px;">
+                        </div>
+                        <div class="col-10 d-flex align-items-center py-1 border-top">
+                            <h5 class="m-0 p-0">KyouHobbyShop</h5>
+                        </div>
+                        <div class="col-2 py-1 border-top">
+                            <img src="../style/asset/image/icon.jpg" alt="" class="rounded-circle" style="aspect-ratio:1/1;width:35px;">
+                        </div>
+                        <div class="col-10 d-flex align-items-center py-1 border-top">
+                            <h5 class="m-0 p-0">Yostar Store</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-9">
+                <div class="bg-white" style="height:350px;">
+                    <div class="p-2" style="height:310px;overflow-y:auto;">
+                        <div class="position-relative mx-3 ms-auto rounded bg-secondary text-white" style="padding:8px 50px 8px 8px;max-width:60%;width:fit-content;">
+                            <span>halo kak</span>
+                            <span class="position-absolute text-monospace text-smaller text-light" style="right:8px;bottom:8px;">08:50</span>
+                        </div>
+                        <p class="m-0 p-0 mx-4 ms-auto text-end text-smaller text-body-tertiary">Read</p>
+                        <div class="position-relative mx-3 rounded bg-primary" style="padding:8px 50px 8px 8px;max-width:60%;width:fit-content;">
+                            <span>hi</span>
+                            <span class="position-absolute text-monospace text-smaller text-body-tertiary" style="right:8px;bottom:8px;">08:50</span>
+                        </div>
+                        <div class="position-relative mx-3 ms-auto rounded bg-secondary text-white" style="padding:8px 50px 8px 8px;max-width:60%;width:fit-content;">
+                            <span>galvanized square steel, echo-friendly wood veneer, expansion screws borrowed from aunt</span>
+                            <span class="position-absolute text-monospace text-smaller text-light" style="right:8px;bottom:8px;">08:50</span>
+                        </div>
+                        <p class="m-0 p-0 mx-4 ms-auto text-end text-smaller text-body-tertiary">Sent</p>
+                    </div>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" name="chat" id="chat" class="form-control" placeholder="Ketik pesan anda disini">
+                            <button type="submit" class="btn btn-secondary"><i class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <%- include("../partials/footer") %>
+
+    <%- include("../partials/_js.ejs") %>
+</body>
+</html>

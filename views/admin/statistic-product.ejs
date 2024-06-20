@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistik Produk</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="icon" href="../style/asset/image/logo.png">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-dark-subtle">
+    <!-- Navbar -->
+    <%- include("../partials/admin-navbar") %>
+    <div class="container-fluid" style="margin-top:70px;">
+        <div class="row">
+            <!-- Sidemenu -->
+            <%- include("../partials/admin-sidemenu") %>
+
+            <!-- Main -->
+            <div class="col-10 py-2">
+                <div class="row">
+                    <div class="col-6">
+                        <h2 class="text-head">Hari Ini</h2>
+                        <table class="w-100 bg-white">
+                            <tr class="text-head align-top">
+                                <td scope="col" class="px-2 pt-2">
+                                    <h5 class="m-0 p-0">Seller Aktif</h5>
+                                </td>
+                                <td scope="col" class="px-2 pt-2 border-start">
+                                    <h5 class="m-0 p-0">Seller Baru</h5>
+                                </td>
+                                <td scope="col" class="px-2 pt-2 border-start">
+                                    <h5 class="m-0 p-0">Total Seller</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-2 pb-2">
+                                    <h4 class="m-0 p-0"><strong>125.133</strong></h4>
+                                </td>
+                                <td class="px-2 pb-2 border-start">
+                                    <h4 class="m-0 p-0 text-success"><strong>3.142</strong></h4>
+                                </td>
+                                <td class="px-2 pb-2 border-start">
+                                    <h4 class="m-0 p-0"><strong>18.250.910</strong></h4>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="table table-bordered mt-2">
+                            <tr class="text-head">
+                                <th>Rentang Harga</th>
+                                <th>Pembeli <sub class="text-inactive">/ Total Pembeli</sub></th>
+                                <th>Pendapatan</th>
+                            </tr>
+                            <tr>
+                                <td>Rp0,00 - Rp15.000,00</td>
+                                <td>5 <sub class="text-inactive">/ 12</sub></td>
+                                <td>Rp60.000,00</td>
+                            </tr>
+                            <tr>
+                                <td>Rp15.000,00 - Rp50.000,00</td>
+                                <td>0 <sub class="text-inactive">/ 12</sub></td>
+                                <td>Rp0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Rp50.000,00 - Rp100.000,00</td>
+                                <td>0 <sub class="text-inactive">/ 12</sub></td>
+                                <td>Rp0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Rp100.000,00 - Rp250.000,00</td>
+                                <td>6 <sub class="text-inactive">/ 12</sub></td>
+                                <td>Rp570.000,00</td>
+                            </tr>
+                            <tr>
+                                <td>Rp250.000,00 - Rp500.000,00</td>
+                                <td>1 <sub class="text-inactive">/ 12</sub></td>
+                                <td>Rp370.000,00</td>
+                            </tr>
+                            <tr>
+                                <td>+Rp500.000,00</td>
+                                <td>0 <sub class="text-inactive">/ 12</sub></td>
+                                <td>Rp0,00</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include("../partials/_js.ejs") %>
+</body>
+</html>

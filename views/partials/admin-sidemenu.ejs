@@ -1,0 +1,42 @@
+<div class="position-sticky col-2 py-2 bg-dark text-head" style="height:calc(100vh - 70px);box-sizing:border-box;overflow-y:auto;top:70px;">
+    <div class="accordion text-white" id="sidemenu">
+        <a href="/admin/dashboard" class="d-block text-decoration-none h5 mb-2">
+            <strong><i class="fa-solid fa-house me-2"></i>Dashboard</strong>
+        </a>
+        <a class="d-block text-decoration-none h5" data-bs-toggle="collapse" data-bs-target="#pesanan" aria-expanded="true" aria-controls="pesanan">
+            <strong><i class="fa-solid fa-list-check me-2"></i>Statistik</strong>
+            <i class="position-absolute fa-solid fa-caret-down h5" style="right:20px;"></i>
+        </a>
+        <div id="pesanan" class="accordion-collapse collapse show mb-2">
+            <div class="d-flex flex-column">
+                <a href="/admin/statistic-user" class="text-decoration-none h6">Pengguna</a>
+                <a href="/admin/statistic-seller" class="text-decoration-none h6">Seller</a>
+                <a href="/admin/statistic-selling" class="text-decoration-none h6">Penjualan</a>
+                <!-- <a href="/admin/statistic-product" class="text-decoration-none h6">Produk</a> -->
+            </div>
+        </div>
+        <a class="d-block text-decoration-none h5" data-bs-toggle="collapse" data-bs-target="#data" aria-expanded="true" aria-controls="data">
+            <strong><i class="fa-solid fa-database me-2"></i>Data</strong>
+            <i class="position-absolute fa-solid fa-caret-down h5" style="right:20px;"></i>
+        </a>
+        <div id="data" class="accordion-collapse collapse show mb-2">
+            <div class="d-flex flex-column">
+                <div class="accordion" id="statistic">
+                    <a class="text-decoration-none text-white h6" data-bs-toggle="collapse" data-bs-target="#tables" aria-controls="tables">
+                        Tabel data
+                    </a>
+                    <i class="position-absolute fa-solid fa-caret-down" style="right:20px;"></i>
+                    <div id="tables" class="ps-2 accordion-collapse collapse border-start border-dark">
+                        <div class="d-flex flex-column">
+                            <a href="/admin/datatable" class="text-decoration-none">users</a>
+                            <a href="/admin/datatable" class="text-decoration-none">customers</a>
+                            <a href="/admin/datatable" class="text-decoration-none">sellers</a>
+                            <a href="/admin/datatable" class="text-decoration-none">products</a>
+                            <a href="/admin/datatable" class="text-decoration-none">shops</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

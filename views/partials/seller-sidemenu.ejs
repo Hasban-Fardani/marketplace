@@ -1,0 +1,61 @@
+<div class="position-sticky py-2 bg-white text-head" style="width:18%;height:calc(100vh - 70px);box-sizing:border-box;overflow-y:auto;top:70px;">
+    <div class="accordion" id="sidemenu">
+        <a href="/seller/dashboard" class="d-block text-decoration-none h5 mb-2">
+            <strong><i class="fa-solid fa-house me-2"></i>Dashboard</strong>
+        </a>
+        <a class="d-block text-decoration-none h5" data-bs-toggle="collapse" data-bs-target="#toko" aria-expanded="true" aria-controls="toko">
+            <strong><i class="fa-solid fa-shop me-2"></i>Toko RamRam</strong>
+            <i class="position-absolute fa-solid fa-caret-down h5" style="right:20px;"></i>
+        </a>
+        <div id="toko" class="accordion-collapse collapse show mb-2">
+            <div class="d-flex flex-column">
+                <a href="/seller/shop" class="text-decoration-none h6">Kelola toko</a>
+            </div>
+        </div>
+        <a class="d-block text-decoration-none h5" data-bs-toggle="collapse" data-bs-target="#pesanan" aria-expanded="true" aria-controls="pesanan">
+            <strong><i class="fa-solid fa-list-check me-2"></i>Pesanan</strong>
+            <i class="position-absolute fa-solid fa-caret-down h5" style="right:20px;"></i>
+        </a>
+        <div id="pesanan" class="accordion-collapse collapse show mb-2">
+            <div class="d-flex flex-column">
+                <a href="/seller/order" class="text-decoration-none h6">Kelola pesanan</a>
+                <a href="/seller/order-shipping" class="text-decoration-none h6">Status pengiriman</a>
+                <a href="/seller/order-cancel" class="text-decoration-none h6">Pembatalan pesanan</a>
+                <a href="/seller/order-review" class="text-decoration-none h6">Ulasan pembeli</a>
+            </div>
+        </div>
+        <a class="d-block text-decoration-none h5" data-bs-toggle="collapse" data-bs-target="#produk" aria-expanded="true" aria-controls="produk">
+            <strong><i class="fa-solid fa-boxes-packing me-2"></i>Produk</strong>
+            <i class="position-absolute fa-solid fa-caret-down h5" style="right:20px;"></i>
+        </a>
+        <div id="produk" class="accordion-collapse collapse show mb-2">
+            <div class="d-flex flex-column">
+                <a href="/seller/product" class="text-decoration-none h6">Kelola produk</a>
+                <a href="/seller/product" class="text-decoration-none h6">Produk diarsipkan</a>
+            </div>
+        </div>
+        <a class="d-block text-decoration-none h5" data-bs-toggle="collapse" data-bs-target="#data" aria-expanded="true" aria-controls="data">
+            <strong><i class="fa-solid fa-database me-2"></i>Data</strong>
+            <i class="position-absolute fa-solid fa-caret-down h5" style="right:20px;"></i>
+        </a>
+        <div id="data" class="accordion-collapse collapse show mb-2">
+            <div class="d-flex flex-column">
+                <div class="accordion" id="statistic">
+                    <a class="text-decoration-none text-dark h6" data-bs-toggle="collapse" data-bs-target="#tables" aria-controls="tables">
+                        Statistik penjualan
+                    </a>
+                    <i class="position-absolute fa-solid fa-caret-down" style="right:20px;"></i>
+                    <div id="tables" class="ps-2 accordion-collapse collapse border-start border-dark">
+                        <div class="d-flex flex-column">
+                            <a href="/seller/statistic" class="text-decoration-none">~1 hari ke belakang</a>
+                            <a href="/seller/statistic" class="text-decoration-none">~1 minggu ke belakang</a>
+                            <a href="/seller/statistic" class="text-decoration-none">~1 bulan ke belakang</a>
+                            <a href="/seller/statistic" class="text-decoration-none">~1 tahun ke belakang</a>
+                            <a href="/seller/statistic" class="text-decoration-none">Keseluruhan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

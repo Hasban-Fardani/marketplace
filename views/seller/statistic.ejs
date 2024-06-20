@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistik Penjualan</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="icon" href="../style/asset/image/logo.png">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-secondary-subtle">
+    <!-- Navbar -->
+    <%- include("../partials/seller-navbar") %>
+    <div class="container-fluid" style="margin-top:70px;">
+        <div class="row">
+            <!-- Sidemenu -->
+            <%- include("../partials/seller-sidemenu") %>
+
+            <!-- Main -->
+            <div class="col pt-3">
+                <div class="row">
+                    <div class="col-6">
+                        <h2 class="text-head">Hari Ini</h2>
+                        <table class="w-100 bg-white">
+                            <tr class="text-head align-top">
+                                <td scope="col" class="px-2 pt-2">
+                                    <h5 class="m-0 p-0">Total Pembeli</h5>
+                                </td>
+                                <td scope="col" class="px-2 pt-2 border-start">
+                                    <h5 class="m-0 p-0">Pendapatan</h5>
+                                </td>
+                                <td scope="col" class="px-2 pt-2 border-start">
+                                    <h5 class="m-0 p-0">Pendapatan</h5>
+                                    <h6 class="m-0 p-0 text-inactive">per Pembeli</sh6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-2 pb-2">
+                                    <h4 class="m-0 p-0"><strong>12</strong></h4>
+                                    <p class="m-0 p-0 text-success">+2</p>
+                                </td>
+                                <td class="px-2 pb-2 border-start">
+                                    <h4 class="m-0 p-0"><strong>Rp1.000.000,00</strong></h4>
+                                    <p class="m-0 p-0 text-success">+Rp230.000,00</p>
+                                </td>
+                                <td class="px-2 pb-2 border-start">
+                                    <h4 class="m-0 p-0"><strong>Rp83.000,00</strong></h4>
+                                    <p class="m-0 p-0 text-success">+Rp6.000,00</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="table table-bordered mt-2">
+                            <tr class="text-head">
+                                <th>Rentang Harga</th>
+                                <th>Pembeli <sub class="text-inactive">/ Total Pembeli</sub></th>
+                                <th>Pendapatan</th>
+                            </tr>
+                            <tr>
+                                <td>Rp0,00 - Rp15.000,00</td>
+                                <td>5 <sub class="text-inactive">/ 12</sub></td>
+                                <td>Rp60.000,00</td>
+                            </tr>
+                            <tr>
+                                <td>Rp15.000,00 - Rp50.000,00</td>
+                                <td>0 <sub class="text-inactive">/ 12</sub></td>
+                                <td>Rp0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Rp50.000,00 - Rp100.000,00</td>
+                                <td>0 <sub class="text-inactive">/ 12</sub></td>
+                                <td>Rp0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Rp100.000,00 - Rp250.000,00</td>
+                                <td>6 <sub class="text-inactive">/ 12</sub></td>
+                                <td>Rp570.000,00</td>
+                            </tr>
+                            <tr>
+                                <td>Rp250.000,00 - Rp500.000,00</td>
+                                <td>1 <sub class="text-inactive">/ 12</sub></td>
+                                <td>Rp370.000,00</td>
+                            </tr>
+                            <tr>
+                                <td>+Rp500.000,00</td>
+                                <td>0 <sub class="text-inactive">/ 12</sub></td>
+                                <td>Rp0,00</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-6">
+                        <h2 class="text-head">Kemarin</h2>
+                        <table class="w-100 bg-primary">
+                            <tr class="text-head align-top">
+                                <td scope="col" class="px-2 pt-2">
+                                    <h5 class="m-0 p-0">Total Pembeli</h5>
+                                </td>
+                                <td scope="col" class="px-2 pt-2 border-start">
+                                    <h5 class="m-0 p-0">Pendapatan</h5>
+                                </td>
+                                <td scope="col" class="px-2 pt-2 border-start">
+                                    <h5 class="m-0 p-0">Pendapatan</h5>
+                                    <h6 class="m-0 p-0 text-inactive">per Pembeli</sh6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-2 pb-2">
+                                    <h4 class="m-0 p-0"><strong>10</strong></h4>
+                                </td>
+                                <td class="px-2 pb-2 border-start">
+                                    <h4 class="m-0 p-0"><strong>Rp770.000,00</strong></h4>
+                                </td>
+                                <td class="px-2 pb-2 border-start">
+                                    <h4 class="m-0 p-0"><strong>Rp77.000,00</strong></h4>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="table second-table table-bordered mt-2">
+                            <tr class="text-head">
+                                <th>Rentang Harga</th>
+                                <th>Pembeli <sub class="text-inactive">/ Total Pembeli</sub></th>
+                                <th>Pendapatan</th>
+                            </tr>
+                            <tr>
+                                <td>Rp0,00 - Rp15.000,00</td>
+                                <td>3 <sub class="text-inactive">/ 10</sub></td>
+                                <td>Rp35.000,00</td>
+                            </tr>
+                            <tr>
+                                <td>Rp15.000,00 - Rp50.000,00</td>
+                                <td>0 <sub class="text-inactive">/ 10</sub></td>
+                                <td>Rp0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Rp50.000,00 - Rp100.000,00</td>
+                                <td>3 <sub class="text-inactive">/ 10</sub></td>
+                                <td>Rp265.000,00</td>
+                            </tr>
+                            <tr>
+                                <td>Rp100.000,00 - Rp250.000,00</td>
+                                <td>4 <sub class="text-inactive">/ 10</sub></td>
+                                <td>Rp470.000,00</td>
+                            </tr>
+                            <tr>
+                                <td>Rp250.000,00 - Rp500.000,00</td>
+                                <td>0 <sub class="text-inactive">/ 10</sub></td>
+                                <td>Rp0,00</td>
+                            </tr>
+                            <tr>
+                                <td>+Rp500.000,00</td>
+                                <td>0 <sub class="text-inactive">/ 10</sub></td>
+                                <td>Rp0,00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include("../partials/_js.ejs") %>
+</body>
+</html>

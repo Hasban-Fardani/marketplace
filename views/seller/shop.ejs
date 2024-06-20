@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesanan</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="icon" href="../style/asset/image/logo.png">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-secondary-subtle">
+    <!-- Navbar -->
+    <%- include("../partials/seller-navbar") %>
+    <div class="container-fluid" style="margin-top:70px;">
+        <div class="row">
+            <!-- Sidemenu -->
+            <%- include("../partials/seller-sidemenu") %>
+
+            <!-- Main -->
+            <div class="col">
+                <div class="position-relative container py-4 border-bottom border-black">
+                    <h1 class="text-head">Data Toko</h1>
+                    <form action="/seller/shop" method="GET">
+                        <div class="mb-3">
+                            <label for="name" class="form-label m-0">Nama Toko</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Toko Toko" value="RamRam" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="city" class="form-label m-0">Domisili</label>
+                            <select name="city" id="city" class="form-select" required>
+                                <option value="" disabled hidden selected>Pilih Domisili</option>
+                                <option value="">Bandung</option>
+                                <option value="">Bogor</option>
+                                <option value="">Jakarta</option>
+                                <option value="">Yogyakarta</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="desc" class="form-label m-0">Deskripsi</label>
+                            <textarea class="form-control" name="desc" id="desc" required>Menjual barang kualitas terbaik dari yang terbaik. Dengan harga yang merakyat dan kualitas pejabat, memastikan kepuasan penuh anda.</textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pfp" class="form-label m-0">Foto Profil</label>
+                            <input type="file" class="form-control" name="pfp" id="pfp">
+                        </div>
+                        <button type="submit" class="btn btn-secondary w-100 my-3">Ubah</button>
+                    </form>
+                    <span class="position-absolute bg-secondary-subtle px-1 translate-middle start-50 top-100">Preview Tampilan</span>
+                </div>
+                <div class="container py-4">
+                    <div class="row pb-3 border-bottom">
+                        <div class="col-3 col-md-2">
+                            <img src="../style/asset/image/icon.jpg" alt="" class="img-fluid ratio1-1 border rounded">
+                        </div>
+                        <div class="col-9 col-md-8">
+                            <h1 class="m-0 p-0 text-head">Toko RamRam</h1>
+                            <h5 class="m-0 text-warning">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </h5>
+                            <h6><i class="fa-solid fa-circle text-secondary"></i> Aktif</h6>
+                            <a class="btn btn-secondary" href="/customer/chat"><i class="fa-solid fa-comments"></i> Hubungi</a>
+                            <button class="btn text-secondary" title="Bagikan"><i class="fa-solid fa-share-nodes"></i></button>
+                        </div>
+                        <div class="col-12 col-md-2">
+                        </div>
+                    </div>
+                    <div class="accordion accordion-custom" id="shopInfo">
+                        <a class="accordion-btn" role="button" data-bs-toggle="collapse" href="#desc" aria-expanded="true" aria-controls="desc">
+                            Deskripsi
+                        </a>
+                        <a class="accordion-btn collapsed" role="button" data-bs-toggle="collapse" href="#products" aria-expanded="false" aria-controls="products">
+                            Produk
+                        </a>
+                        <div class="accordion-item">
+                            <div id="desc" class="accordion-collapse collapse show" data-bs-parent="#shopInfo">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-12 col-md-8">
+                                            <dl class="row">
+                                                <dd class="col-2 text-head">Domisili</dd>
+                                                <dd class="col-10">Kota Bandung</dd>
+                                                <dd class="col-2 text-head">Waktu Respon</dd>
+                                                <dd class="col-10">4 jam</dd>
+                                                <dd class="col-2 text-head">Jam Aktif</dd>
+                                                <dd class="col-10">08:00 - 22:00</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col-12 col-md-4 border-start">
+                                            <div class="position-relative bg-white mb-2 p-2 shadow">
+                                                <h4 class="position-absolute" style="top:20px;right:20px;"><sup class="float-end"><i class="fa-solid fa-ellipsis-vertical"></i></sup></h4>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="../style/asset/image/icon.jpg" alt="" class="rounded-circle" style="aspect-ratio:1/1;height:35px;">
+                                                    <div class="ms-2">
+                                                        <p class="text-smaller m-0"><strong><a href="/customer/other-account" class="text-dark text-decoration-none">Pengguna Lain</a></strong></p>
+                                                        <p class="text-smaller m-0 text-warning">
+                                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                            <span class="text-monospace text-dark">- 5 hari yang lalu</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p class="m-0 pt-2">
+                                                    Amerika ya :D
+                                                </p>
+                                            </div>
+                                            <div class="position-relative bg-white mb-2 p-2 shadow">
+                                                <h4 class="position-absolute" style="top:20px;right:20px;"><sup class="float-end"><i class="fa-solid fa-ellipsis-vertical"></i></sup></h4>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="../style/asset/image/icon.jpg" alt="" class="rounded-circle" style="aspect-ratio:1/1;height:35px;">
+                                                    <div class="ms-2">
+                                                        <p class="text-smaller m-0"><strong><a href="/customer/other-account" class="text-dark text-decoration-none">Pengguna Lain</a></strong></p>
+                                                        <p class="text-smaller m-0 text-warning">
+                                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                            <span class="text-monospace text-dark">- 5 hari yang lalu</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p class="m-0 pt-2">
+                                                    Hallo :D
+                                                </p>
+                                            </div>
+                                            <div class="position-relative bg-white mb-2 p-2 shadow">
+                                                <h4 class="position-absolute" style="top:20px;right:20px;"><sup class="float-end"><i class="fa-solid fa-ellipsis-vertical"></i></sup></h4>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="../style/asset/image/icon.jpg" alt="" class="rounded-circle" style="aspect-ratio:1/1;height:35px;">
+                                                    <div class="ms-2">
+                                                        <p class="text-smaller m-0"><strong><a href="/customer/other-account" class="text-dark text-decoration-none">Pengguna Lain</a></strong></p>
+                                                        <p class="text-smaller m-0 text-warning">
+                                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                            <span class="text-monospace text-dark">- 5 hari yang lalu</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p class="m-0 pt-2">
+                                                    Hallo :D
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="products" class="accordion-collapse collapse" data-bs-parent="#shopInfo">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-12 col-md-3 d-flex d-md-block border-end">
+                                            <select name="category" id="category" class="form-select position-sticky" style="top:90px;">
+                                                <option value="" disabled selected>Pilih Kategori</option>
+                                                <option value="aksesoris">Aksesoris</option>
+                                                <option value="botani">Botani</option>
+                                                <option value="elektronik">Elektronik</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 col-md-9">
+                                            <div class="row item-card">
+                                                <div class="col-4 col-md-3 my-2">
+                                                    <div class="card border-0 shadow-sm" title="Tipis-tipis abangku, menyala, tetap ilmu padi king">
+                                                        <img src="../style/asset/image/test.png" class="object-fit-cover img-fluid" style="aspect-ratio:1/1;" alt="">
+                                                        <div class="card-body p-2">
+                                                            <h5 class="card-title text-dark text-truncate m-0"><b>Tipis-tipis abangku, menyala, tetap ilmu padi king</b></h5>
+                                                            <h6><span class="badge text-bg-secondary">tag</span> <span class="badge text-bg-secondary">tag</span> <span class="badge text-bg-secondary">tag</span></h6>
+                                                            <p class="card-subtitle mb-2 h6"><span class="text-warning">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </span> (10)</p>
+                                                            <h6 class="my-1">Rp1.000.000,00</h6>
+                                                            <h6>
+                                                                <a href="" class="text-decoration-none text-dark mb-3">
+                                                                    <img src="../style/asset/image/test.jfif" class="rounded-circle" style="aspect-ratio:1/1;height:15px;" alt="">
+                                                                    Toko
+                                                                </a>
+                                                            </h6>
+                                                            <h6 class="pt-2 text-smaller border-top">Terjual 10+</h6>
+                                                        </div>
+                                                        <a href="/customer/product" class="stretched-link"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 col-md-3 my-2">
+                                                    <div class="card border-0 shadow-sm" title="Tipis-tipis abangku, menyala, tetap ilmu padi king">
+                                                        <img src="../style/asset/image/test.png" class="object-fit-cover img-fluid" style="aspect-ratio:1/1;" alt="">
+                                                        <div class="card-body p-2">
+                                                            <h5 class="card-title text-dark text-truncate m-0"><b>Tipis-tipis abangku, menyala, tetap ilmu padi king</b></h5>
+                                                            <h6><span class="badge text-bg-secondary">tag</span> <span class="badge text-bg-secondary">tag</span> <span class="badge text-bg-secondary">tag</span></h6>
+                                                            <p class="card-subtitle mb-2 h6"><span class="text-warning">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </span> (10)</p>
+                                                            <h6 class="my-1">Rp1.000.000,00</h6>
+                                                            <h6>
+                                                                <a href="" class="text-decoration-none text-dark mb-3">
+                                                                    <img src="../style/asset/image/test.jfif" class="rounded-circle" style="aspect-ratio:1/1;height:15px;" alt="">
+                                                                    Toko
+                                                                </a>
+                                                            </h6>
+                                                            <h6 class="pt-2 text-smaller border-top">Terjual 10+</h6>
+                                                        </div>
+                                                        <a href="/customer/product" class="stretched-link"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 col-md-3 my-2">
+                                                    <div class="card border-0 shadow-sm" title="Tipis-tipis abangku, menyala, tetap ilmu padi king">
+                                                        <img src="../style/asset/image/test.png" class="object-fit-cover img-fluid" style="aspect-ratio:1/1;" alt="">
+                                                        <div class="card-body p-2">
+                                                            <h5 class="card-title text-dark text-truncate m-0"><b>Tipis-tipis abangku, menyala, tetap ilmu padi king</b></h5>
+                                                            <h6><span class="badge text-bg-secondary">tag</span> <span class="badge text-bg-secondary">tag</span> <span class="badge text-bg-secondary">tag</span></h6>
+                                                            <p class="card-subtitle mb-2 h6"><span class="text-warning">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </span> (10)</p>
+                                                            <h6 class="my-1">Rp1.000.000,00</h6>
+                                                            <h6>
+                                                                <a href="" class="text-decoration-none text-dark mb-3">
+                                                                    <img src="../style/asset/image/test.jfif" class="rounded-circle" style="aspect-ratio:1/1;height:15px;" alt="">
+                                                                    Toko
+                                                                </a>
+                                                            </h6>
+                                                            <h6 class="pt-2 text-smaller border-top">Terjual 10+</h6>
+                                                        </div>
+                                                        <a href="/customer/product" class="stretched-link"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 col-md-3 my-2">
+                                                    <div class="card border-0 shadow-sm" title="Tipis-tipis abangku, menyala, tetap ilmu padi king">
+                                                        <img src="../style/asset/image/test.png" class="object-fit-cover img-fluid" style="aspect-ratio:1/1;" alt="">
+                                                        <div class="card-body p-2">
+                                                            <h5 class="card-title text-dark text-truncate m-0"><b>Tipis-tipis abangku, menyala, tetap ilmu padi king</b></h5>
+                                                            <h6><span class="badge text-bg-secondary">tag</span> <span class="badge text-bg-secondary">tag</span> <span class="badge text-bg-secondary">tag</span></h6>
+                                                            <p class="card-subtitle mb-2 h6"><span class="text-warning">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </span> (10)</p>
+                                                            <h6 class="my-1">Rp1.000.000,00</h6>
+                                                            <h6>
+                                                                <a href="" class="text-decoration-none text-dark mb-3">
+                                                                    <img src="../style/asset/image/test.jfif" class="rounded-circle" style="aspect-ratio:1/1;height:15px;" alt="">
+                                                                    Toko
+                                                                </a>
+                                                            </h6>
+                                                            <h6 class="pt-2 text-smaller border-top">Terjual 10+</h6>
+                                                        </div>
+                                                        <a href="/customer/product" class="stretched-link"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-md-3 my-2">
+                                                    <div class="card border-0 shadow-sm" title="Tipis-tipis abangku, menyala, tetap ilmu padi king">
+                                                        <img src="../style/asset/image/test.png" class="object-fit-cover img-fluid" style="aspect-ratio:1/1;" alt="">
+                                                        <div class="card-body p-2">
+                                                            <h5 class="card-title text-dark text-truncate m-0"><b>Tipis-tipis abangku, menyala, tetap ilmu padi king</b></h5>
+                                                            <h6><span class="badge text-bg-secondary">tag</span> <span class="badge text-bg-secondary">tag</span> <span class="badge text-bg-secondary">tag</span></h6>
+                                                            <p class="card-subtitle mb-2 h6"><span class="text-warning">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </span> (10)</p>
+                                                            <h6 class="my-1">Rp1.000.000,00</h6>
+                                                            <h6>
+                                                                <a href="" class="text-decoration-none text-dark mb-3">
+                                                                    <img src="../style/asset/image/test.jfif" class="rounded-circle" style="aspect-ratio:1/1;height:15px;" alt="">
+                                                                    Toko
+                                                                </a>
+                                                            </h6>
+                                                            <h6 class="pt-2 text-smaller border-top">Terjual 10+</h6>
+                                                        </div>
+                                                        <a href="/customer/product" class="stretched-link"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-md-3 my-2">
+                                                    <div class="card border-0 shadow-sm" title="Tipis-tipis abangku, menyala, tetap ilmu padi king">
+                                                        <img src="../style/asset/image/test.png" class="object-fit-cover img-fluid" style="aspect-ratio:1/1;" alt="">
+                                                        <div class="card-body p-2">
+                                                            <h5 class="card-title text-dark text-truncate m-0"><b>Tipis-tipis abangku, menyala, tetap ilmu padi king</b></h5>
+                                                            <h6><span class="badge text-bg-secondary">tag</span> <span class="badge text-bg-secondary">tag</span> <span class="badge text-bg-secondary">tag</span></h6>
+                                                            <p class="card-subtitle mb-2 h6"><span class="text-warning">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </span> (10)</p>
+                                                            <h6 class="my-1">Rp1.000.000,00</h6>
+                                                            <h6>
+                                                                <a href="" class="text-decoration-none text-dark mb-3">
+                                                                    <img src="../style/asset/image/test.jfif" class="rounded-circle" style="aspect-ratio:1/1;height:15px;" alt="">
+                                                                    Toko
+                                                                </a>
+                                                            </h6>
+                                                            <h6 class="pt-2 text-smaller border-top">Terjual 10+</h6>
+                                                        </div>
+                                                        <a href="/customer/product" class="stretched-link"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include("../partials/_js.ejs") %>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Data</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="icon" href="../style/asset/image/logo.png">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-dark-subtle">
+    <!-- Navbar -->
+    <%- include("../partials/admin-navbar") %>
+    <div class="container-fluid" style="margin-top:70px;">
+        <div class="row">
+            <!-- Sidemenu -->
+            <%- include("../partials/admin-sidemenu") %>
+
+            <!-- Main -->
+            <div class="col-10 py-2">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card text-bg-dark">
+                            <div class="card-header">
+                                <h5 class="m-0 p-0 text-head"><i class="fa-solid fa-plus-square"></i> Tambah</h5>
+                            </div>
+                            <div class="card-body">
+                                <form action="" method="GET">
+                                    <div class="mb-2">
+                                        <label for="user_type" class="form-label m-0">user_type</label>
+                                        <select name="user_type" id="user_type" class="form-select" required>
+                                            <option value="" disabled hidden selected>Pilih Tipe Pengguna</option>
+                                            <option value="">c</option>
+                                            <option value="">s</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="email" class="form-label m-0">email</label>
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="nama@email.com" required>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="email_ver" class="form-label m-0">email_verified_at</label>
+                                        <input type="date" class="form-control" name="email_ver" id="email_ver">
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="pw" class="form-label m-0">password</label>
+                                        <input type="password" class="form-control" name="pw" id="pw">
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="rem_token" class="form-label m-0">remember_token</label>
+                                        <input type="text" class="form-control" name="rem_token" id="rem_token">
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="created" class="form-label m-0">created_at</label>
+                                        <input type="date" class="form-control" name="created" id="created">
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="updated" class="form-label m-0">updated_at</label>
+                                        <input type="date" class="form-control" name="updated" id="updated">
+                                    </div>
+                                    <button type="submit" class="btn btn-secondary w-100 my-3">Tambah</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card text-bg-dark">
+                            <div class="card-header">
+                                <h5 class="m-0 p-0 text-head"><i class="fa-solid fa-pencil"></i> Edit</h5>
+                            </div>
+                            <div class="card-body">
+                                <form action="" method="GET">
+                                    <div class="mb-2">
+                                        <label for="user_type" class="form-label m-0">user_type</label>
+                                        <select name="user_type" id="user_type" class="form-select" required>
+                                            <option value="" disabled hidden selected>Pilih Tipe Pengguna</option>
+                                            <option value="">c</option>
+                                            <option value="">s</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="email" class="form-label m-0">email</label>
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="nama@email.com" required>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="email_ver" class="form-label m-0">email_verified_at</label>
+                                        <input type="date" class="form-control" name="email_ver" id="email_ver">
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="pw" class="form-label m-0">password</label>
+                                        <input type="password" class="form-control" name="pw" id="pw">
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="rem_token" class="form-label m-0">remember_token</label>
+                                        <input type="text" class="form-control" name="rem_token" id="rem_token">
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="created" class="form-label m-0">created_at</label>
+                                        <input type="date" class="form-control" name="created" id="created">
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="updated" class="form-label m-0">updated_at</label>
+                                        <input type="date" class="form-control" name="updated" id="updated">
+                                    </div>
+                                    <button type="submit" class="btn btn-warning w-100 my-3">Edit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-2">
+                        <div class="card text-bg-dark">
+                            <div class="card-header">
+                                <h5 class="m-0 p-0 text-head"><i class="fa-solid fa-table"></i> Tabel Data</h5>
+                            </div>
+                            <div class="card-body" style="max-width:100%;overflow:auto;">
+                                <table class="table table-secondary table-bordered">
+                                    <tr>
+                                        <th title="BIGINT()">id</th>
+                                        <th title="CHAR()">user_type</th>
+                                        <th title="VARCHAR()">email</th>
+                                        <th title="TIMESTAMP()">email_verified_at</th>
+                                        <th title="VARCHAR()">password</th>
+                                        <th title="VARCHAR(100)">remember_token</th>
+                                        <th title="TIMESTAMP()">created_at</th>
+                                        <th title="TIMESTAMP()">updated_at</th>
+                                        <th>Aksi</th>
+                                    </tr>
+                                    <tr>
+                                        <th>1</th>
+                                        <td>c</td>
+                                        <td>ramram@mail.com</td>
+                                        <td></td>
+                                        <td>uxufngif7x3f02m</td>
+                                        <td>ni48mx8r32cx001</td>
+                                        <td>2024-06-11 13:13:32</td>
+                                        <td></td>
+                                        <td>
+                                            <button class="btn btn-warning">Edit</button>
+                                            <button class="btn btn-danger">Hapus</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>2</th>
+                                        <td>s</td>
+                                        <td>hypergryph@mail.com</td>
+                                        <td></td>
+                                        <td>ni48mx8r32cx001</td>
+                                        <td>uxufngif7x3f02m</td>
+                                        <td>2024-06-11 14:15:31</td>
+                                        <td></td>
+                                        <td>
+                                            <button class="btn btn-warning">Edit</button>
+                                            <button class="btn btn-danger">Hapus</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include("../partials/_js.ejs") %>
+</body>
+</html>

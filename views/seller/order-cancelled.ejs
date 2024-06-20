@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembatalan Pesanan</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="icon" href="../style/asset/image/logo.png">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-secondary-subtle">
+    <!-- Navbar -->
+    <%- include("../partials/seller-navbar") %>
+    <div class="container-fluid" style="margin-top:70px;">
+        <div class="row">
+            <!-- Sidemenu -->
+            <%- include("../partials/seller-sidemenu") %>
+
+            <!-- Main -->
+            <div class="col">
+                <div class="accordion accordion-custom" id="cancels">
+                    <a class="accordion-btn" role="button" data-bs-toggle="collapse" href="#cancel" aria-expanded="true" aria-controls="cancel">
+                        Pembatalan
+                    </a>
+                    <a class="accordion-btn collapsed" role="button" data-bs-toggle="collapse" href="#cancelled" aria-expanded="false" aria-controls="cancelled">
+                        Pesanan dibatalkan
+                    </a>
+                    <div class="accordion-item">
+                        <div id="cancel" class="accordion-collapse collapse show" data-bs-parent="#cancels">
+                            <div class="accordion-body">
+                                <div>
+                                    <table class="table table-bordered">
+                                        <tr>
+                                            <th>Kode Pesanan</th>
+                                            <th>Pembeli</th>
+                                            <th>Status</th>
+                                            <th>Rincian</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                        <tr>
+                                            <td>20240304/dj32r8h</td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <img src="../style/asset/image/icon.jpg" alt="" class="rounded-circle" style="aspect-ratio:1/1;height:25px;">
+                                                    <div class="ms-2">
+                                                        <a href="" class="text-dark m-0">pembeli<i class="fa-regular fa-circle-question"></i></a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>Dibatalkan sistem</td>
+                                            <td>
+                                                <a href="" class="text-dark m-0">Data rincian</a>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>20240304/dj32r8h</td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <img src="../style/asset/image/icon.jpg" alt="" class="rounded-circle" style="aspect-ratio:1/1;height:25px;">
+                                                    <div class="ms-2">
+                                                        <a href="" class="text-dark m-0">pembeli<i class="fa-regular fa-circle-question"></i></a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>Dibatalkan pembeli</td>
+                                            <td>
+                                                <a href="" class="text-dark m-0">Data rincian</a>
+                                            </td>
+                                            <td>
+                                                <a href="" class="btn btn-danger">Batalkan</a>
+                                                <a href="" class="btn btn-warning">Tolak</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cancelled" class="accordion-collapse collapse" data-bs-parent="#cancels">
+                            <div class="accordion-body">
+                                <div>
+                                    <table class="table table-bordered">
+                                        <tr>
+                                            <th>Kode Pesanan</th>
+                                            <th>Pembeli</th>
+                                            <th>Status</th>
+                                            <th>Rincian</th>
+                                        </tr>
+                                        <tr>
+                                            <td>20240304/dj32r8h</td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <img src="../style/asset/image/icon.jpg" alt="" class="rounded-circle" style="aspect-ratio:1/1;height:25px;">
+                                                    <div class="ms-2">
+                                                        <a href="" class="text-dark m-0">pembeli<i class="fa-regular fa-circle-question"></i></a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>Dibatalkan sistem</td>
+                                            <td>
+                                                <a href="" class="text-dark m-0">Data rincian</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>20240304/dj32r8h</td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <img src="../style/asset/image/icon.jpg" alt="" class="rounded-circle" style="aspect-ratio:1/1;height:25px;">
+                                                    <div class="ms-2">
+                                                        <a href="" class="text-dark m-0">pembeli<i class="fa-regular fa-circle-question"></i></a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>Dibatalkan pembeli</td>
+                                            <td>
+                                                <a href="" class="text-dark m-0">Data rincian</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include("../partials/_js.ejs") %>
+</body>
+</html>
