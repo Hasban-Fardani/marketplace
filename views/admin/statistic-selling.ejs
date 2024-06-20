@@ -20,13 +20,12 @@
             <!-- Main -->
             <div class="col-10 py-2">
                 <div class="row">
-                    <h2 class="text-head">Hari Ini, 12 Juni 2024</h2>
+                    <h2 class="text-head">10 Juni 2024 - Hari Ini, <span class="text-smaller">12 Juni 2024</span></h2>
                     <div class="col-8">
                         <table class="w-100 bg-white">
                             <tr class="text-head align-top">
                                 <td scope="col" class="px-2 pt-2">
                                     <h5 class="m-0 p-0">Pesanan Baru</h5>
-                                    <h6 class="m-0 p-0 text-inactive">sejak ~1 jam yang lalu</h6>
                                 </td>
                                 <td scope="col" class="px-2 pt-2 border-start">
                                     <h5 class="m-0 p-0">Pesanan Selesai</h5>
@@ -103,15 +102,15 @@
                     </div>
                     <div class="col-4">
                         <div class="accordion accordion-custom m-0 p-0" id="timeSpan">
-                            <a class="accordion-btn" role="button" data-bs-toggle="collapse" href="#from" aria-expanded="true" aria-controls="from">
+                            <a class="accordion-btn collapsed" role="button" data-bs-toggle="collapse" href="#from" aria-expanded="false" aria-controls="from">
                                 Dari...
                             </a>
                             -
-                            <a class="accordion-btn collapsed" role="button" data-bs-toggle="collapse" href="#until" aria-expanded="false" aria-controls="until">
+                            <a class="accordion-btn" role="button" data-bs-toggle="collapse" href="#until" aria-expanded="true" aria-controls="until">
                                 Sampai...
                             </a>
                             <div class="accordion-item">
-                                <div id="from" class="accordion-collapse collapse show" data-bs-parent="#timeSpan">
+                                <div id="from" class="accordion-collapse collapse" data-bs-parent="#timeSpan">
                                     <div class="d-flex justify-content-between p-2 text-bg-dark">
                                         <i class="fa-solid fa-caret-left h5"></i>
                                         <span class="h5">Juni 2024</span>
@@ -143,7 +142,7 @@
                                         </table>
                                     </div>
                                 </div>
-                                <div id="until" class="accordion-collapse collapse" data-bs-parent="#timeSpan">
+                                <div id="until" class="accordion-collapse collapse show" data-bs-parent="#timeSpan">
                                     <div class="d-flex justify-content-between p-2 text-bg-dark">
                                         <i class="fa-solid fa-caret-left h5"></i>
                                         <span class="h5">Juni 2024</span>
@@ -161,7 +160,7 @@
                                                 <td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
                                             </tr>
                                             <tr class="text-center">
-                                                <td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td>
+                                                <td>9</td><td>10</td><td>11</td><td class="bg-dark-subtle">12</td><td>13</td><td>14</td><td>15</td>
                                             </tr>
                                             <tr class="text-center">
                                                 <td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td>

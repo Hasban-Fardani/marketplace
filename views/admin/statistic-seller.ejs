@@ -20,7 +20,7 @@
             <!-- Main -->
             <div class="col-10 py-2">
                 <div class="row">
-                        <h2 class="text-head">Hari Ini, 12 Juni 2024</h2>
+                    <h2 class="text-head">21 Mei 2024 - Hari Ini, <span class="text-smaller">12 Juni 2024</span></h2>
                     <div class="col-6">
                         <table class="w-100 bg-white">
                             <tr class="text-head align-top">
@@ -50,35 +50,80 @@
                     </div>
                     <div class="col-1"></div>
                     <div class="col-4">
-                        <div class="d-flex justify-content-between p-2 text-bg-dark">
-                            <i class="fa-solid fa-caret-left h5"></i>
-                            <span class="h5">Juni 2024</span>
-                            <i class="fa-solid fa-caret-right h5"></i>
-                        </div>
-                        <div class="bg-white">
-                            <table class="table table-bordered">
-                                <tr class="text-center">
-                                    <th>M</th><th>S</th><th>S</th><th>R</th><th>K</th><th>J</th><th>S</th>
-                                </tr>
-                                <tr class="text-center">
-                                    <td class="text-inactive">26</td><td class="text-inactive">27</td><td class="text-inactive">28</td><td class="text-inactive">29</td><td class="text-inactive">30</td><td class="text-inactive">31</td><td>1</td>
-                                </tr>
-                                <tr class="text-center">
-                                    <td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
-                                </tr>
-                                <tr class="text-center">
-                                    <td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td>
-                                </tr>
-                                <tr class="text-center">
-                                    <td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td>
-                                </tr>
-                                <tr class="text-center">
-                                    <td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td>
-                                </tr>
-                                <tr class="text-center">
-                                    <td>30</td><td class="text-inactive">1</td><td class="text-inactive">2</td><td class="text-inactive">3</td><td class="text-inactive">4</td><td class="text-inactive">5</td><td class="text-inactive">6</td>
-                                </tr>
-                            </table>
+                        <div class="accordion accordion-custom m-0 p-0" id="timeSpan">
+                            <a class="accordion-btn collapsed" role="button" data-bs-toggle="collapse" href="#from" aria-expanded="false" aria-controls="from">
+                                Dari...
+                            </a>
+                            -
+                            <a class="accordion-btn" role="button" data-bs-toggle="collapse" href="#until" aria-expanded="true" aria-controls="until">
+                                Sampai...
+                            </a>
+                            <div class="accordion-item">
+                                <div id="from" class="accordion-collapse collapse" data-bs-parent="#timeSpan">
+                                    <div class="d-flex justify-content-between p-2 text-bg-dark">
+                                        <i class="fa-solid fa-caret-left h5"></i>
+                                        <span class="h5">Juni 2024</span>
+                                        <i class="fa-solid fa-caret-right h5"></i>
+                                    </div>
+                                    <div class="bg-white">
+                                        <table class="table table-bordered">
+                                            <tr class="text-center">
+                                                <th>M</th><th>S</th><th>S</th><th>R</th><th>K</th><th>J</th><th>S</th>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td class="text-inactive">26</td><td class="text-inactive">27</td><td class="text-inactive">28</td><td class="text-inactive">29</td><td class="text-inactive">30</td><td class="text-inactive">31</td><td>1</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td>30</td><td class="text-inactive">1</td><td class="text-inactive">2</td><td class="text-inactive">3</td><td class="text-inactive">4</td><td class="text-inactive">5</td><td class="text-inactive">6</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div id="until" class="accordion-collapse collapse show" data-bs-parent="#timeSpan">
+                                    <div class="d-flex justify-content-between p-2 text-bg-dark">
+                                        <i class="fa-solid fa-caret-left h5"></i>
+                                        <span class="h5">Juni 2024</span>
+                                        <i class="fa-solid fa-caret-right h5"></i>
+                                    </div>
+                                    <div class="bg-white">
+                                        <table class="table table-bordered">
+                                            <tr class="text-center">
+                                                <th>M</th><th>S</th><th>S</th><th>R</th><th>K</th><th>J</th><th>S</th>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td class="text-inactive">26</td><td class="text-inactive">27</td><td class="text-inactive">28</td><td class="text-inactive">29</td><td class="text-inactive">30</td><td class="text-inactive">31</td><td>1</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td>9</td><td>10</td><td>11</td><td class="bg-dark-subtle">12</td><td>13</td><td>14</td><td>15</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td>30</td><td class="text-inactive">1</td><td class="text-inactive">2</td><td class="text-inactive">3</td><td class="text-inactive">4</td><td class="text-inactive">5</td><td class="text-inactive">6</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
