@@ -9,6 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 app.get("/login/", (req,res) =>{ res.render("login.ejs") });
+app.get("/signup/", (req,res) =>{ res.render("signup.ejs") });
 
 // Customer
 app.post("/customer/dashboard/", (req,res) =>{ 
