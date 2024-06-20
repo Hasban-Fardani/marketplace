@@ -1,4 +1,4 @@
-const app = require('./api/index.js');
+const app = require('./api/index.cjs');
 const port = 3000;
 
 app.listen(port, () => {
