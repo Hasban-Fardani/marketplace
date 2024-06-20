@@ -10,6 +10,7 @@ app.use(express.static("public"));
 
 app.get("/login/", (req,res) =>{ res.render("login.ejs") });
 app.get("/signup/", (req,res) =>{ res.render("signup.ejs") });
+app.get("/signup-seller/", (req,res) =>{ res.render("signup-seller.ejs") });
 
 // Customer
 app.post("/customer/dashboard/", (req,res) =>{ 
