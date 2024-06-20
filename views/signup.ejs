@@ -20,9 +20,32 @@
         <div class="container card py-3" style="width:35%;min-width:300px;">
             <h3 class="w-50 text-center text-head card-title border-bottom my-3 mx-auto">SIGN UP</h3>
             <form action="/customer/dashboard" method="POST">
+                <div class="mb-3 row">
+                    <label for="fname" class="col-6 col-form-label m-0">Nama Depan</label>
+                    <label for="lname" class="col-6 col-form-label m-0">Nama Belakang</label>
+                    <div class="col-6">
+                        <input type="text" class="form-control" name="fname" id="fname" placeholder="depan" required>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" name="lname" id="lname" placeholder="belakang" required>
+                    </div>
+                </div>
                 <div class="mb-3">
                     <label for="email" class="form-label m-0">Email</label>
                     <input type="email" class="form-control" name="email" id="email" placeholder="nama@email.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label m-0">Nomor Telepon</label>
+                    <input type="text" class="form-control" name="phone" id="phone" placeholder="xxxx-xxxx-xxxx" required>
+                </div>
+                <div class="mb-3">
+                    <label for="date" class="form-label m-0">Tanggal Lahir</label>
+                    <input type="datetime" class="form-control" name="date" id="date" required>
+                </div>
+                <div class="mb-3">
+                    <label for="gender" class="w-100 form-label m-0">Jenis Kelamin</label>
+                    <input type="radio" class="" name="gender" id="gender" value="lakilaki" required> Laki-laki
+                    <input type="radio" class="" name="gender" id="gender" value="perempuan" required> Perempuan
                 </div>
                 <div class="mb-3">
                     <label for="pw" class="form-label m-0">Password</label>
